@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "sstream": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "time.h": "c",
+        "as_filesys.h": "c",
+        "types.h": "c",
+        "dirent.h": "c",
+        "stdlib.h": "c",
+        "typeinfo": "c",
+        "initializer_list": "c",
+        "utility": "c"
+    }
+}

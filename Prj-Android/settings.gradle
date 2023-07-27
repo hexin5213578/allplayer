@@ -1,0 +1,4 @@
+include ':player'
+include ':allplayer'
+//include ':app'
+//rootProject.name = "allplayer"

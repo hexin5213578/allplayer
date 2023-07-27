@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AllVideoViewType">
+        <attr name="allplayer_type" format="integer"/>
+    </declare-styleable>
+
+</resources>

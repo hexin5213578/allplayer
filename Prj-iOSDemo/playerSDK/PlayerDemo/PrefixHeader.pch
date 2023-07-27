@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  PlayerDemo
+//
+//  Created by 秦骏 on 2021/12/16.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//#import "UIColor+Any.h"
+//#import "Masonry.h"
+//
+//#import "AllCamPlayer.h"
+//#import "openGL20.h"
+
+#define defaultIp @"123.60.129.96"//@"183.207.208.105"//@"123.60.47.9"
+#define defaultPort @"10002"
+
+#define UIColorFromHex(s) ([UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0])
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SafeAreaTopHeight ((ScreenHeight >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"] ? 88 : 64)
+#define SafeAreaTopBottom ((ScreenHeight >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"] ? 34 : 0)
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define KIsiPhoneX ((ScreenHeight >= 812.0) ? YES : NO)
+#define kStatusBarHeight (CGFloat)(KIsiPhoneX?(44):(20))
+/*底部安全区域远离高度*/
+#define kBottomSafeHeight (CGFloat)(KIsiPhoneX?(34.0):(0))
+/*状态栏和导航栏总高度*/
+#define kNavBarAndStatusBarHeight (CGFloat)(KIsiPhoneX?(88.0):(64.0))
+/*TabBar高度*/
+#define kTabBarHeight (CGFloat)(KIsiPhoneX?(49.0 + 34.0):(49.0))
+
+#endif /* PrefixHeader_pch */

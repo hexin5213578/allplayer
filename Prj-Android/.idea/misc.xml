@@ -1,0 +1,47 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../layout/custom_preview.xml" value="0.27314814814814814" />
+        <entry key="../../../../../.gradle/caches/transforms-2/files-2.1/26b00e1d6001b59d81c6633c212755bc/jetified-base-0.0.6/res/drawable/shape_white_bg.xml" value="0.34270833333333334" />
+        <entry key="../../../../../.gradle/caches/transforms-2/files-2.1/ad52fb41d63312800acc8f88695c06b5/jetified-devicelistview-0.0.24/res/drawable/shape_line_bg.xml" value="0.34270833333333334" />
+        <entry key="../../../../../.gradle/caches/transforms-2/files-2.1/ad52fb41d63312800acc8f88695c06b5/jetified-devicelistview-0.0.24/res/layout/item_device.xml" value="0.3265625" />
+        <entry key="../../../../../.gradle/caches/transforms-2/files-2.1/cbe938cb2181d618f16857532b880479/jetified-base-0.0.5/res/drawable/shape_white_bg.xml" value="0.34270833333333334" />
+        <entry key="allplayer/src/main/res/layout/view_player.xml" value="0.3401268115942029" />
+        <entry key="player/src/main/res/drawable-xhdpi/arrows_left_ic.xml" value="0.32314814814814813" />
+        <entry key="player/src/main/res/drawable/arrows_right_ic.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/ic_list_down.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/ic_organization.xml" value="0.3314814814814815" />
+        <entry key="player/src/main/res/drawable/ic_pu_ballhead_onlin.xml" value="0.3314814814814815" />
+        <entry key="player/src/main/res/drawable/pu_ballhead.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/pu_fixed.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/pu_ptz.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/shape_bg_white_radius_10.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_btn_sure_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_cancel_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_device_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_editext_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_edittext_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_playview_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_playview_bg_unselect.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/shape_sure_bg.xml" value="0.34270833333333334" />
+        <entry key="player/src/main/res/drawable/title_selector.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/drawable/white_selector.xml" value="0.3212962962962963" />
+        <entry key="player/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="player/src/main/res/layout/activity_play.xml" value="0.3401268115942029" />
+        <entry key="player/src/main/res/layout/activity_test.xml" value="0.2546875" />
+        <entry key="player/src/main/res/layout/adapter_control_item.xml" value="0.3265625" />
+        <entry key="player/src/main/res/layout/fragment_video_list.xml" value="0.3265625" />
+        <entry key="player/src/main/res/layout/popwindow_select_platform_local.xml" value="0.3265625" />
+        <entry key="player/src/main/res/layout/title_item.xml" value="0.3265625" />
+        <entry key="player/src/main/res/layout/view_player.xml" value="0.3411458333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+framework module Pods_allplayer_allplayerUITests {
+  umbrella header "Pods-allplayer-allplayerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

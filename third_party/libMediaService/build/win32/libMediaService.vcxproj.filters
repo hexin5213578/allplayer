@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="as_common">
+      <UniqueIdentifier>{f9a93127-57a2-4490-b463-317504d9665d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtsp">
+      <UniqueIdentifier>{28b422d8-8520-46af-8412-66791e43a650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtmp">
+      <UniqueIdentifier>{590974cd-7714-47d7-a4dc-465eb7f6d29a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mediaservice">
+      <UniqueIdentifier>{c359099f-9e7c-4618-80e3-d8d65423c9bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mov">
+      <UniqueIdentifier>{488833ad-d836-4f78-8885-a119c3ad1ccf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_atomic.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_base64.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_basetype.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_buffer_cache.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_common.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_config.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_daemon.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_dlfcn.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_event.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_http_digest.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_ini_config.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_json.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_lock_guard.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_log.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_mem.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_mutex.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_network_svr.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_queue.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_queue_safe.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_queue_sync.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_ring_cache.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_synchronized.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_task.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_thread.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_thread_manage.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_time.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_timer.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_tinyxml2.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_url.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libMediaService.h">
+      <Filter>mediaservice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mk_client_connection.h">
+      <Filter>mediaservice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mk_media_common.h">
+      <Filter>mediaservice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mk_media_service.h">
+      <Filter>mediaservice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtmp\mk_librtmp.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtmp\mk_rtmp_connection.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_media_sdp.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_connection.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_defs.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_packet.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_frame_organizer.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_head.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_packet.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_service.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtsp\mk_rtsp_udp_handle.h">
+      <Filter>rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\as_common\as_string.h">
+      <Filter>as_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\amf0.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\amf3.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-demuxer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-muxer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-parser.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-proto.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-reader.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\flv-writer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\fmp4-writer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-atom.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-box.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-buffer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-file-buffer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-format.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-internal.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-ioutil.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-reader.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mov-writer.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mp3-header.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mpeg4-aac.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mpeg4-avc.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mpeg4-bits.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mov\include\mpeg4-hevc.h">
+      <Filter>mov</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mk_mov_file_writer.h">
+      <Filter>mediaservice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_base64.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_buffer_cache.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_daemon.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_dlfcn.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_event.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_http_digest.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_ini_config.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_json.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_lock_guard.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_log.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_mutex.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_network_svr.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_queue.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_queue_safe.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_ring_cache.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_synchronized.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_task.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_thread.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_thread_manage.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_time.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_timer.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_tinyxml2.cpp">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_url.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libMediaService.cpp">
+      <Filter>mediaservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mk_client_connection.cpp">
+      <Filter>mediaservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mk_media_service.cpp">
+      <Filter>mediaservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtmp\mk_librtmp.cpp">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtmp\mk_rtmp_connection.cpp">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_media_sdp.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_connection.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_packet.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_rtp_frame_organizer.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_rtp_packet.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_service.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtsp\mk_rtsp_udp_handle.cpp">
+      <Filter>rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_string.c">
+      <Filter>as_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mk_media_common.cpp">
+      <Filter>mediaservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\amf0.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\amf3.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-demuxer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-demuxer-script.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-muxer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-parser.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-reader.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\flv-writer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\fmp4-writer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\hevc-annexbtomp4.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\hevc-mp4toannexb.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-av1.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-avc1.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-dinf.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-elst.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-esds.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-file-buffer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-ftyp.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-hdlr.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-hvcc.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-iods.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-leva.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-mdhd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-mehd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-mfhd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-minf.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-mvhd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-opus.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-reader.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-sidx.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stco.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stsc.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stsd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stss.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stsz.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-stts.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tag.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tfdt.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tfhd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tfra.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tkhd.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-track.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-trex.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-trun.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-tx3g.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mov-writer.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mp3-header.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-aac.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-aac-asc.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-annexbtomp4.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-avc.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-hevc.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mov\source\mpeg4-mp4toannexb.c">
+      <Filter>mov</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mk_mov_file_writer.cpp">
+      <Filter>mediaservice</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

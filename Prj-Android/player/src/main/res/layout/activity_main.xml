@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <com.allcam.basemodule.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backButton="false"
+        app:rightTitle="@string/common_history_list"
+        app:title="@string/common_play"
+        tools:ignore="MissingConstraints" />
+
+    <!--计时器-->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:format="00:00:00"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_bar"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/fl_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="#E8E8E8"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_play_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.allcam.allplayer.view.AllPlayer
+                android:id="@+id/play_view_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_playview_bg_unselect"
+                android:padding="@dimen/dp_1"
+                app:allplayer_type="123"
+                app:layout_constraintBottom_toTopOf="@+id/play_view_3"
+                app:layout_constraintEnd_toStartOf="@+id/play_view_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.allcam.allplayer.view.AllPlayer
+                android:id="@+id/play_view_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_playview_bg_unselect"
+                android:padding="@dimen/dp_1"
+                app:allplayer_type="456"
+                app:layout_constraintBottom_toTopOf="@+id/play_view_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/play_view_1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.allcam.allplayer.view.AllPlayer
+                android:id="@+id/play_view_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_playview_bg_unselect"
+                android:padding="@dimen/dp_1"
+                app:allplayer_type="789"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/play_view_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/play_view_1"
+                tools:ignore="MissingConstraints" />
+
+            <com.allcam.allplayer.view.AllPlayer
+                android:id="@+id/play_view_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_playview_bg_unselect"
+                android:padding="@dimen/dp_1"
+                app:allplayer_type="147"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/play_view_3"
+                app:layout_constraintTop_toBottomOf="@+id/play_view_2"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!--  控制器的按钮  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ry_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/dp_60"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_video_container"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_device_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:text="@string/device_list"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ry_control"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_device_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:text="搜索"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ry_control"
+        tools:ignore="MissingConstraints" />
+
+    <!--展示设别列表的view-->
+
+    <com.allcam.view.recyclerView.DeviceListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/shape_device_bg"
+        android:padding="@dimen/dp_2"
+        app:initializationDataAuto="false"
+        app:layout_constraintBottom_toTopOf="@+id/iv_show_close"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device_list"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/iv_show_close"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/ic_list_down"
+        android:onClick="showHideLoginView"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ip_port_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_ip_port_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="@string/common_ip_port_address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/input_ip_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_ip_address"
+        tools:ignore="MissingConstraints" />
+    <!--ip地址输入框-->
+    <EditText
+        android:id="@+id/input_ip_address"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_edittext_bg"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        app:layout_constraintBottom_toTopOf="@+id/ed_input_userName"
+        app:layout_constraintEnd_toStartOf="@+id/tv_sure"
+        app:layout_constraintStart_toEndOf="@+id/tv_ip_port_address"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@drawable/shape_btn_sure_bg"
+        android:gravity="center"
+        android:onClick="ipSure"
+        android:text="@string/common_sure"
+        app:layout_constraintBottom_toBottomOf="@+id/input_ip_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_ip_address"
+        app:layout_constraintTop_toTopOf="@+id/input_ip_address"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="@string/common_user_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_input_userName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ed_input_userName"
+        tools:ignore="MissingConstraints" />
+    <!--用户名输入框-->
+    <EditText
+        android:id="@+id/ed_input_userName"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_edittext_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ed_input_verification"
+        app:layout_constraintStart_toEndOf="@+id/tv_userName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="@string/common_user_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_input_userName"
+        app:layout_constraintStart_toEndOf="@+id/ed_input_userName"
+        app:layout_constraintTop_toTopOf="@+id/ed_input_userName"
+        tools:ignore="MissingConstraints" />
+
+    <!--密码输入框-->
+    <EditText
+        android:id="@+id/ed_input_user_password"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_edittext_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        app:layout_constraintBottom_toTopOf="@+id/ed_input_verification"
+        app:layout_constraintStart_toEndOf="@+id/tv_user_password"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_user_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="@string/common_verification_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_input_verification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ed_input_verification"
+        tools:ignore="MissingConstraints" />
+
+    <!--验证码输入框-->
+    <EditText
+        android:id="@+id/ed_input_verification"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_edittext_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_user_verification"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_verification"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_35"
+        android:onClick="onClickFreshVerification"
+        app:layout_constraintStart_toEndOf="@+id/ed_input_verification"
+        app:layout_constraintTop_toTopOf="@+id/ed_input_verification"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@drawable/shape_btn_sure_bg"
+        android:gravity="center"
+        android:onClick="onClickLogin"
+        android:text="@string/common_login"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_verification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_verification"
+        app:layout_constraintTop_toTopOf="@+id/iv_verification"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_ip_port_address,input_ip_address,
+        tv_sure,tv_userName,ed_input_userName,tv_user_password,ed_input_user_password,
+       tv_user_verification,ed_input_verification,iv_verification,tv_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

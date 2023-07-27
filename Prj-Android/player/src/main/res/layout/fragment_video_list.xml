@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.allcam.basemodule.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rightColor="@color/red"
+        app:rightTitle="请长按选择item"
+        app:title="@string/record_video"
+        tools:ignore="MissingConstraints" />
+
+    <com.allcam.basemodule.widget.ClearEditText
+        android:id="@+id/ed_input_device"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/shape_edittext_bg"
+        android:hint="@string/please_input_device_id"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:text="@string/record_search"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ed_input_device"
+        app:layout_constraintEnd_toEndOf="@id/ed_input_device"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/shape_device_bg"
+        android:gravity="center"
+        android:hint="@string/record_please_input_start_time"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toStartOf="@+id/tv_end_time"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/shape_device_bg"
+        android:gravity="center"
+        android:text="@string/record_please_input_end_time"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/tv_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search"
+        tools:ignore="MissingConstraints" />
+
+    <com.allcam.basemodule.widget.StatusLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_time"
+        tools:ignore="MissingConstraints">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/rl_status_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.allcam.basemodule.widget.WrapRecyclerView
+                android:id="@+id/rv_record_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.allcam.basemodule.widget.StatusLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>682188E7-9F95-4980-91EB-FF143A23A68F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>682188E7-9F95-4980-91EB-FF143A23A68F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902787.05990899</real>
+			<key>timeStoppedRecording</key>
+			<real>655902787.08801997</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>682188E7-9F95-4980-91EB-FF143A23A68F</string>
+		</dict>
+		<key>712AA36C-0DC7-47A6-90B6-A06C82538C8D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>712AA36C-0DC7-47A6-90B6-A06C82538C8D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902787.83597505</real>
+			<key>timeStoppedRecording</key>
+			<real>655902787.85637403</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>712AA36C-0DC7-47A6-90B6-A06C82538C8D</string>
+		</dict>
+		<key>7EAAEAFF-7520-4CCC-BD7A-8AE7B845A307</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7EAAEAFF-7520-4CCC-BD7A-8AE7B845A307.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902809.23853302</real>
+			<key>timeStoppedRecording</key>
+			<real>655902809.25847495</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>7EAAEAFF-7520-4CCC-BD7A-8AE7B845A307</string>
+		</dict>
+		<key>8EB803A0-48C0-4D79-A9C2-81FBD01E0517</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8EB803A0-48C0-4D79-A9C2-81FBD01E0517.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902763.19133103</real>
+			<key>timeStoppedRecording</key>
+			<real>655902763.22305501</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>8EB803A0-48C0-4D79-A9C2-81FBD01E0517</string>
+		</dict>
+		<key>923DC6BF-A77D-478A-B333-EFFE16E39AD9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>923DC6BF-A77D-478A-B333-EFFE16E39AD9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902765.90521896</real>
+			<key>timeStoppedRecording</key>
+			<real>655902765.92581606</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>923DC6BF-A77D-478A-B333-EFFE16E39AD9</string>
+		</dict>
+		<key>97D788EA-D9DC-4758-889D-784FFB9A5AEF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>97D788EA-D9DC-4758-889D-784FFB9A5AEF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902786.09984803</real>
+			<key>timeStoppedRecording</key>
+			<real>655902786.11991</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>97D788EA-D9DC-4758-889D-784FFB9A5AEF</string>
+		</dict>
+		<key>B3F1A760-ED8D-497B-A679-547164F9E783</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B3F1A760-ED8D-497B-A679-547164F9E783.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902822.76880205</real>
+			<key>timeStoppedRecording</key>
+			<real>655902822.79093695</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>B3F1A760-ED8D-497B-A679-547164F9E783</string>
+		</dict>
+		<key>EE307B4C-1F02-41AC-82A0-3021429998D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EE307B4C-1F02-41AC-82A0-3021429998D7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902742.990309</real>
+			<key>timeStoppedRecording</key>
+			<real>655902743.96525502</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>EE307B4C-1F02-41AC-82A0-3021429998D7</string>
+		</dict>
+		<key>F53F2346-9D0C-4B95-B939-A8D7C1947AC2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F53F2346-9D0C-4B95-B939-A8D7C1947AC2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655902810.06181598</real>
+			<key>timeStoppedRecording</key>
+			<real>655902810.08175504</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>F53F2346-9D0C-4B95-B939-A8D7C1947AC2</string>
+		</dict>
+		<key>F8E6F420-9F54-4009-A382-454997CE238D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F8E6F420-9F54-4009-A382-454997CE238D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>playerSDK project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>playerSDK</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build playerSDK</string>
+			<key>timeStartedRecording</key>
+			<real>655892470.93313801</real>
+			<key>timeStoppedRecording</key>
+			<real>655892472.42367101</real>
+			<key>title</key>
+			<string>Build playerSDK</string>
+			<key>uniqueIdentifier</key>
+			<string>F8E6F420-9F54-4009-A382-454997CE238D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

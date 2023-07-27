@@ -1,0 +1,6 @@
+framework module AllcamApiSDK {
+  umbrella header "AllcamApiSDK.h"
+
+  export *
+  module * { export * }
+}

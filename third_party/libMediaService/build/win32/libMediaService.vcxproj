@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release-32|Win32">
+      <Configuration>Release-32</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release1|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAFA4224-8003-4B21-A0F1-052DA3008C76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libMediaService</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release-32|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\;..\..\as_common;..\..\rtmp;..\..\rtsp;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <IncludePath>..\..\as_common;..\..\rtmp;..\..\rtsp;..\..\;$(IncludePath)</IncludePath>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-32|Win32'">
+    <IncludePath>..\..\as_common;..\..\rtmp;..\..\rtsp;..\..\mov\include;..\..\;$(IncludePath)</IncludePath>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBMEDIASERVICE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;LIBMEDIASERVICE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-32|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;LIBMEDIASERVICE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\as_common\as.h" />
+    <ClInclude Include="..\..\as_common\as_atomic.h" />
+    <ClInclude Include="..\..\as_common\as_base64.h" />
+    <ClInclude Include="..\..\as_common\as_basetype.h" />
+    <ClInclude Include="..\..\as_common\as_buffer_cache.h" />
+    <ClInclude Include="..\..\as_common\as_common.h" />
+    <ClInclude Include="..\..\as_common\as_config.h" />
+    <ClInclude Include="..\..\as_common\as_daemon.h" />
+    <ClInclude Include="..\..\as_common\as_dlfcn.h" />
+    <ClInclude Include="..\..\as_common\as_event.h" />
+    <ClInclude Include="..\..\as_common\as_http_digest.h" />
+    <ClInclude Include="..\..\as_common\as_ini_config.h" />
+    <ClInclude Include="..\..\as_common\as_json.h" />
+    <ClInclude Include="..\..\as_common\as_lock_guard.h" />
+    <ClInclude Include="..\..\as_common\as_log.h" />
+    <ClInclude Include="..\..\as_common\as_mem.h" />
+    <ClInclude Include="..\..\as_common\as_mutex.h" />
+    <ClInclude Include="..\..\as_common\as_network_svr.h" />
+    <ClInclude Include="..\..\as_common\as_queue.h" />
+    <ClInclude Include="..\..\as_common\as_queue_safe.h" />
+    <ClInclude Include="..\..\as_common\as_queue_sync.h" />
+    <ClInclude Include="..\..\as_common\as_ring_cache.h" />
+    <ClInclude Include="..\..\as_common\as_string.h" />
+    <ClInclude Include="..\..\as_common\as_synchronized.h" />
+    <ClInclude Include="..\..\as_common\as_task.h" />
+    <ClInclude Include="..\..\as_common\as_thread.h" />
+    <ClInclude Include="..\..\as_common\as_thread_manage.h" />
+    <ClInclude Include="..\..\as_common\as_time.h" />
+    <ClInclude Include="..\..\as_common\as_timer.h" />
+    <ClInclude Include="..\..\as_common\as_tinyxml2.h" />
+    <ClInclude Include="..\..\as_common\as_url.h" />
+    <ClInclude Include="..\..\libMediaService.h" />
+    <ClInclude Include="..\..\mk_client_connection.h" />
+    <ClInclude Include="..\..\mk_media_common.h" />
+    <ClInclude Include="..\..\mk_media_service.h" />
+    <ClInclude Include="..\..\mk_mov_file_writer.h" />
+    <ClInclude Include="..\..\mov\include\amf0.h" />
+    <ClInclude Include="..\..\mov\include\amf3.h" />
+    <ClInclude Include="..\..\mov\include\flv-demuxer.h" />
+    <ClInclude Include="..\..\mov\include\flv-muxer.h" />
+    <ClInclude Include="..\..\mov\include\flv-parser.h" />
+    <ClInclude Include="..\..\mov\include\flv-proto.h" />
+    <ClInclude Include="..\..\mov\include\flv-reader.h" />
+    <ClInclude Include="..\..\mov\include\flv-writer.h" />
+    <ClInclude Include="..\..\mov\include\fmp4-writer.h" />
+    <ClInclude Include="..\..\mov\include\mov-atom.h" />
+    <ClInclude Include="..\..\mov\include\mov-box.h" />
+    <ClInclude Include="..\..\mov\include\mov-buffer.h" />
+    <ClInclude Include="..\..\mov\include\mov-file-buffer.h" />
+    <ClInclude Include="..\..\mov\include\mov-format.h" />
+    <ClInclude Include="..\..\mov\include\mov-internal.h" />
+    <ClInclude Include="..\..\mov\include\mov-ioutil.h" />
+    <ClInclude Include="..\..\mov\include\mov-reader.h" />
+    <ClInclude Include="..\..\mov\include\mov-writer.h" />
+    <ClInclude Include="..\..\mov\include\mp3-header.h" />
+    <ClInclude Include="..\..\mov\include\mpeg4-aac.h" />
+    <ClInclude Include="..\..\mov\include\mpeg4-avc.h" />
+    <ClInclude Include="..\..\mov\include\mpeg4-bits.h" />
+    <ClInclude Include="..\..\mov\include\mpeg4-hevc.h" />
+    <ClInclude Include="..\..\rtmp\mk_librtmp.h" />
+    <ClInclude Include="..\..\rtmp\mk_rtmp_connection.h" />
+    <ClInclude Include="..\..\rtsp\mk_media_sdp.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_connection.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_defs.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_packet.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_frame_organizer.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_head.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_rtp_packet.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_service.h" />
+    <ClInclude Include="..\..\rtsp\mk_rtsp_udp_handle.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\as_common\as_base64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_buffer_cache.cpp" />
+    <ClCompile Include="..\..\as_common\as_daemon.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_dlfcn.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_event.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_http_digest.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_ini_config.cpp" />
+    <ClCompile Include="..\..\as_common\as_json.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_lock_guard.cpp" />
+    <ClCompile Include="..\..\as_common\as_log.cpp" />
+    <ClCompile Include="..\..\as_common\as_mutex.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_network_svr.cpp" />
+    <ClCompile Include="..\..\as_common\as_queue.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_queue_safe.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_ring_cache.cpp" />
+    <ClCompile Include="..\..\as_common\as_string.c" />
+    <ClCompile Include="..\..\as_common\as_synchronized.cpp" />
+    <ClCompile Include="..\..\as_common\as_task.cpp" />
+    <ClCompile Include="..\..\as_common\as_thread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_thread_manage.cpp" />
+    <ClCompile Include="..\..\as_common\as_time.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\as_common\as_timer.cpp" />
+    <ClCompile Include="..\..\as_common\as_tinyxml2.cpp" />
+    <ClCompile Include="..\..\as_common\as_url.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libMediaService.cpp" />
+    <ClCompile Include="..\..\mk_client_connection.cpp" />
+    <ClCompile Include="..\..\mk_media_common.cpp" />
+    <ClCompile Include="..\..\mk_media_service.cpp" />
+    <ClCompile Include="..\..\mk_mov_file_writer.cpp" />
+    <ClCompile Include="..\..\mov\source\amf0.c" />
+    <ClCompile Include="..\..\mov\source\amf3.c" />
+    <ClCompile Include="..\..\mov\source\flv-demuxer-script.c" />
+    <ClCompile Include="..\..\mov\source\flv-demuxer.c" />
+    <ClCompile Include="..\..\mov\source\flv-muxer.c" />
+    <ClCompile Include="..\..\mov\source\flv-parser.c" />
+    <ClCompile Include="..\..\mov\source\flv-reader.c" />
+    <ClCompile Include="..\..\mov\source\flv-writer.c" />
+    <ClCompile Include="..\..\mov\source\fmp4-writer.c" />
+    <ClCompile Include="..\..\mov\source\hevc-annexbtomp4.c" />
+    <ClCompile Include="..\..\mov\source\hevc-mp4toannexb.c" />
+    <ClCompile Include="..\..\mov\source\mov-av1.c" />
+    <ClCompile Include="..\..\mov\source\mov-avc1.c" />
+    <ClCompile Include="..\..\mov\source\mov-dinf.c" />
+    <ClCompile Include="..\..\mov\source\mov-elst.c" />
+    <ClCompile Include="..\..\mov\source\mov-esds.c" />
+    <ClCompile Include="..\..\mov\source\mov-file-buffer.c" />
+    <ClCompile Include="..\..\mov\source\mov-ftyp.c" />
+    <ClCompile Include="..\..\mov\source\mov-hdlr.c" />
+    <ClCompile Include="..\..\mov\source\mov-hvcc.c" />
+    <ClCompile Include="..\..\mov\source\mov-iods.c" />
+    <ClCompile Include="..\..\mov\source\mov-leva.c" />
+    <ClCompile Include="..\..\mov\source\mov-mdhd.c" />
+    <ClCompile Include="..\..\mov\source\mov-mehd.c" />
+    <ClCompile Include="..\..\mov\source\mov-mfhd.c" />
+    <ClCompile Include="..\..\mov\source\mov-minf.c" />
+    <ClCompile Include="..\..\mov\source\mov-mvhd.c" />
+    <ClCompile Include="..\..\mov\source\mov-opus.c" />
+    <ClCompile Include="..\..\mov\source\mov-reader.c" />
+    <ClCompile Include="..\..\mov\source\mov-sidx.c" />
+    <ClCompile Include="..\..\mov\source\mov-stco.c" />
+    <ClCompile Include="..\..\mov\source\mov-stsc.c" />
+    <ClCompile Include="..\..\mov\source\mov-stsd.c" />
+    <ClCompile Include="..\..\mov\source\mov-stss.c" />
+    <ClCompile Include="..\..\mov\source\mov-stsz.c" />
+    <ClCompile Include="..\..\mov\source\mov-stts.c" />
+    <ClCompile Include="..\..\mov\source\mov-tag.c" />
+    <ClCompile Include="..\..\mov\source\mov-tfdt.c" />
+    <ClCompile Include="..\..\mov\source\mov-tfhd.c" />
+    <ClCompile Include="..\..\mov\source\mov-tfra.c" />
+    <ClCompile Include="..\..\mov\source\mov-tkhd.c" />
+    <ClCompile Include="..\..\mov\source\mov-track.c" />
+    <ClCompile Include="..\..\mov\source\mov-trex.c" />
+    <ClCompile Include="..\..\mov\source\mov-trun.c" />
+    <ClCompile Include="..\..\mov\source\mov-tx3g.c" />
+    <ClCompile Include="..\..\mov\source\mov-writer.c" />
+    <ClCompile Include="..\..\mov\source\mp3-header.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-aac-asc.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-aac.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-annexbtomp4.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-avc.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-hevc.c" />
+    <ClCompile Include="..\..\mov\source\mpeg4-mp4toannexb.c" />
+    <ClCompile Include="..\..\rtmp\mk_librtmp.cpp" />
+    <ClCompile Include="..\..\rtmp\mk_rtmp_connection.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_media_sdp.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_connection.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_packet.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_rtp_frame_organizer.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_rtp_packet.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_service.cpp" />
+    <ClCompile Include="..\..\rtsp\mk_rtsp_udp_handle.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
